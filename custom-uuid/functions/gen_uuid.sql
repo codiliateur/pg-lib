@@ -15,12 +15,12 @@ BEGIN
 	-- Prepare Object type value
     IF (p_objtype > 0) THEN
     	v_objtype := lpad(right(to_hex(p_objtype),4),4,'0');
-END IF;
+    END IF;
 
     -- Prepare Application type value
     IF (p_apptype > 0) THEN
     	v_apptype := lpad(right(to_hex(p_apptype),2),2,'0');
-END IF;
+    END IF;
 
     -- Compile UUID in format TTTTTTTT-SSSS-S0AA-OOOO-RRRRRRRRRRRR
 	---- T - Timestamp segment (8 hex-digits)
