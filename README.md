@@ -31,9 +31,10 @@ The presence of segments with application and entity identifiers in the UUID str
 
 ### Other functions
 
-Functions `get_uuid_timestamp(uuid)`, `get_uuid_entity(uuid)`, `get_uuid_app(uuid)` allow to extract a timestamp, entity ID or application ID from the UUID.
+```
+get_uuid_timestamp(uuid) : timestamp
+get_uuid_entity(uuid) : integer
+get_uuid_app(uuid) : integer
+```
 
-
-
-
-
+These functions allow to extract a timestamp, entity ID or application ID from the UUID.
