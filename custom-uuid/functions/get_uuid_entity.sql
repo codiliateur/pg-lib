@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.get_uuid_objtype (
+CREATE OR REPLACE FUNCTION public.get_uuid_entity (
   p_uuid uuid
 )
 RETURNS integer AS

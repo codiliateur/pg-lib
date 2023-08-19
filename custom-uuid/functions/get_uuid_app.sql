@@ -1,10 +1,10 @@
-CREATE OR REPLACE FUNCTION public.get_uuid_apptype (
+CREATE OR REPLACE FUNCTION public.get_uuid_app (
   p_uuid uuid
 )
 RETURNS integer AS
 $body$
 BEGIN
-	-- Extract Application type from uuid and convert it to integer
+    -- Extract Application type from uuid and convert it to integer
     RETURN ('x'||substring(p_uuid::varchar,17,2))::bit(8)::integer;
 END;
 $body$
